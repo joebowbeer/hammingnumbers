@@ -1,11 +1,11 @@
-package hamming2
+package hamming
 
 import scala.collection.mutable.PriorityQueue
 
 /**
  * Alternate implementation using a <tt>PriorityQueue</tt>.
  */
-object Main {
+object HammingPQ {
 
   def hamming: Stream[Int] = {
     val q = new PriorityQueue[Int]()(Ordering[Int].reverse) += 1
